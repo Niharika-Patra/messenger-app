@@ -1,0 +1,93 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.friends-list {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.friends-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friends-list li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.friends-list li:last-child {
+  border-bottom: none;
+}
+
+.chat-window {
+  flex: 2;
+  padding: 20px;
+}
+
+.chat-messages {
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.message {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.message.sent {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.message.received {
+  background-color: #eee;
+}
+
+.message-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.message-input input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.message-input button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.message-input button:hover {
+  background-color: #0056b3;
+}
